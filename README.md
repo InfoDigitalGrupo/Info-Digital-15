@@ -6,7 +6,7 @@
 
 ### Introducción
 
-A inicios del año 2017, en el secano costero chileno acontecieron una suma de incendios mega forestales que afectaron principalmente siete regiones del país. Este hecho fue denominado por especialistas como una “Tormenta de Fuego”, dada su inusual gravedad que da paso a una nueva generación de incendios a escala mundial, la que según expertos de la Unión Europea tiene como causa principal el calentamiento global.
+A inicios del año 2017, en el secano costero chileno acontecieron una suma de incendios mega forestales que afectaron principalmente siete regiones del país. Este hecho fue denominado por especialistas como una “Tormenta de Fuego” dada su inusual gravedad que da paso a una nueva generación de incendios a escala mundial, la que según expertos de la Unión Europea tiene como causa principal el calentamiento global.
 
 La situación acontecida en el territorio nacional, se convirtió rápidamente en un episodio de escala mundial, puesto que supera la “quinta generación” de incendios dada su intensidad en la línea de fuego y la velocidad de propagación (UE 2017; CONAF 2017). 
 
