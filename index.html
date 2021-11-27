@@ -1,112 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
-        <title>Reemplaza este título que se muestra en la ventana de tu navegador</title>
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Impacto de la Tormenta Ignea en Chile 2017</title>
+    <meta property="og:title" content="Impacto de la Tormenta Ignea en Chile 2017" />
+    <meta property="og:image" content="./img/og-img.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Implementación de la estructura adaptativa sobre una infografía de la tormenta de fuego">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // https://coolors.co/0f0000-430a0a-6e2d2b-dbaf80-f0e4db-f9f8f5-e7ebdb-8ba276-4c6237-173630
+      // https://coolors.co/0f0000-591c1b-f2caab-f7f6f2-e3e7d4-4c6237
+      const colores = ["#0f0000", "#591c1b",  "#f2caab", "#f7f6f2", "#e3e7d4", "#4c6237"];
+      const w = 100 / colores.length;
+      window.addEventListener("DOMContentLoaded", () => {
+        const paleta = document.getElementById("colores");
+        colores.forEach((c, x) => {
+          paleta.innerHTML += `<rect width="${w}" height="25" x="${x * w}" y="0" fill="${c}" stroke="${c}"/>`;
+        });
+      });
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+      *::selection {
+        background: #8f1f1d;
+        color: white;
+      }
+      .font-roboto {
+        font-family: Roboto, "Segoe UI", Ubuntu, sans-serif;
+      }
+      .font-arvo {
+        font-weight: bold;
+        font-family: Arvo, Georgia, "Times New Roman", Times, serif;
+      }
+      img.font-display {
+        height: 300px;
+        object-fit: cover;
+        object-position: 0 0;
+      }
+    </style>
+  </head>
 
-    <body>
-        <header class="container-fluid py-5">
-            <div class="row">
-                <div class="col text-center py-5">
-                    <h2 class="fs-6 text-uppercase">Vulnerabilidades y Desastres Socionaturales en Chile</h2>
-                    <h1 class="fs-2">REEMPLAZAR CON SU TEMA</h1>
-                </div>
+  <body>
+    <header class="container-fluid py-5">
+      <div class="row">
+        <div class="col text-center py-5">
+          <h2 class="fs-6 text-uppercase">Vulnerabilidades y Desastres Socionaturales en Chile</h2>
+          <h1 class="fs-2">Impacto de la Tormenta Ignea en Chile 2017</h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="container pb-5">
+      <div class="row">
+        <div class="col-sm-10 col-md-8 mx-auto">
+          <p class="lead">
+            A inicios del año 2017 en el secano costero chileno acontecieron una suma de incendios mega forestales que
+            afectaron principalmente siete regiones del país. Este hecho fue denominado por especialistas como <strong>“Tormenta
+            de Fuego”</strong>, dada su inusual gravedad que da paso a una nueva generación de incendios a escala mundial, que
+            según expertos de la Unión Europea tiene como causa principal el calentamiento global.
+          </p>
+          <p>
+            La situación acontecida en el territorio nacional, se convirtió rápidamente en un episodio a escala mundial,
+            puesto que supera la “quinta generación” de incendios, dada su intensidad en la línea de fuego y la
+            velocidad de propagación (UE 2017; CONAF 2017).
+          </p>
+
+          <div class="shadow-sm my-5">
+            <img src="./img/infografia.png" class="w-100 my-4 d-none d-md-block" alt="Borrador de una infografía, en versión de escritorio" />
+            <img src="./img/infografia-sm.png" class="w-100 my-4 d-md-none" alt="Borrador de una infografía, en versión movil" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="container-fluid bg-light">
+      <div class="row py-5">
+        <div class="col-sm-11 mx-auto py-3">
+          <!--la paleta-->
+          <h3 class="text-center pt-1 pb-3">Colores</h3>
+
+          <div class="card shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 25" class="card-img-top">
+              <g id="colores"></g>
+            </svg>
+            <div class="card-body">
+              <h4 class="card-title">Fuego, tierra y bosque</h4>
+              <p class="card-text">Representan el fuego y los bosques que fueron quemados</p>
             </div>
-        </header>
+          </div>
 
-        <section class="container pb-5">
-            <div class="row">
-                <div class="col-sm-10 col-md-8 mx-auto">
-                    <p class="lead">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel mi orci. Aliquam erat volutpat. Vestibulum id lorem mattis, malesuada eros et, facilisis elit. Donec mollis odio eu elit convallis posuere. Vivamus
-                        id est quis velit tincidunt fringilla. Pellentesque finibus a neque et volutpat. Fusce nec tempor nunc. Proin eget molestie felis. Integer ac pretium metus, nec ornare diam. Integer ac neque vel erat porta fermentum
-                        quis eget mauris. Curabitur rhoncus nibh sit amet placerat posuere.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel mi orci. Aliquam erat volutpat. Vestibulum id lorem mattis, malesuada eros et, facilisis elit. Donec mollis odio eu elit convallis posuere. Vivamus
-                        id est quis velit tincidunt fringilla. Pellentesque finibus a neque et volutpat. Fusce nec tempor nunc. Proin eget molestie felis. Integer ac pretium metus, nec ornare diam. Integer ac neque vel erat porta fermentum
-                        quis eget mauris. Curabitur rhoncus nibh sit amet placerat posuere.
-                    </p>
-
-                    <div class="shadow-sm my-5">
-                        <img src="img/infografia.png" class="w-100 my-4 d-none d-md-block" alt="describir la infografía" />
-
-                        <img src="img/infografia-sm.png" class="w-100 my-4 d-md-none" alt="describir la infografía" />
-                    </div>
+          <!--las fuentes-->
+          <h3 class="text-center pt-5 pb-1">Tipografías</h3>
+          <div class="row mt-2 mb-4 g-3">
+            <!--primera fuente-->
+            <div class="col-sm-6">
+              <div class="card shadow-sm">
+                <img
+                  src="./img/fonts-arvo.jpeg"
+                  class="card-img-top font-display"
+                  alt="describir la imagen"
+                  height="250"
+                />
+                <div class="card-body">
+                  <h4 class="card-title font-arvo">Arvo</h4>
+                  <p class="card-text">Serif moderna para títulos</p>
                 </div>
+              </div>
             </div>
-        </section>
-
-        <main class="container-fluid bg-light">
-            <div class="row py-5">
-                <div class="col-sm-11 mx-auto py-3">
-                    <!--la paleta-->
-                    <h3 class="text-center pt-1 pb-3">Colores</h3>
-
-                    <div class="card shadow-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 25" class="card-img-top">
-                            <g id="colores"></g>
-                        </svg>
-                        <div class="card-body">
-                            <h4 class="card-title">Reemplaza con un nombre</h4>
-                            <p class="card-text">Reemplaza con una descripción breve.</p>
-                        </div>
-                    </div>
-
-                    <!--las fuentes-->
-                    <h3 class="text-center pt-5 pb-1">Tipografías</h3>
-                    <div class="row mt-2 mb-4 g-3">
-                        <!--primera fuente-->
-                        <div class="col-sm-6">
-                            <div class="card shadow-sm">
-                                <img src="img/reemplazar-tipografias.png" class="card-img-top" alt="describir la imagen" />
-                                <div class="card-body">
-                                    <h4 class="card-title">Reemplaza con su nombre</h4>
-                                    <p class="card-text">Reemplaza con una descripción breve.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--segunda fuente-->
-                        <div class="col-sm-6">
-                            <div class="card shadow-sm">
-                                <img src="img/reemplazar-tipografias.png" class="card-img-top" alt="describir la imagen" />
-                                <div class="card-body">
-                                    <h4 class="card-title">Reemplaza con un nombre</h4>
-                                    <p class="card-text">Reemplaza con una descripción breve.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--no más fuentes-->
+            <!--segunda fuente-->
+            <div class="col-sm-6">
+              <div class="card shadow-sm">
+                <img
+                  src="./img/fonts-roboto.png"
+                  class="card-img-top font-display"
+                  alt="describir la imagen"
+                  height="250"
+                />
+                <div class="card-body">
+                  <h4 class="card-title font-roboto">Roboto</h4>
+                  <p class="card-text">Sans-serif clara para el cuerpo</p>
                 </div>
+              </div>
             </div>
-        </main>
+          </div>
+          <!--no más fuentes-->
+        </div>
+      </div>
+    </main>
 
-        <footer class="container-fluid bg-dark text-white-50">
-            <div class="row py-3">
-                <div class="col-12">
-                    <p class="d-flex justify-content-between small p-1 m-0">
-                        <a href="https://github.com/profesorfaco/dno075-2021-2/" class="link-light">Infografía Digital</a>
-                        <a href="https://github.com/profesorfaco/dno075-2021-2/tree/main/clase-15" class="d-none d-lg-inline link-light">Lunes 22 de noviembre, 2021</a>
-                    </p>
-                </div>
-            </div>
-        </footer>
-
-        <script>
-            // Reemplaza los colores dentro del paréntesis cuadrado, respetando las comillas.
-            // Si necesitas que un color ocupe más espacio en la paleta: debes repetirlo.
-            var colores = ["#333333", "#777777", "#AAAAAA", "#CCCCCC", "#CCCCCC", "#EEEEEE", "#222", "#222", "#222"];
-            // No reemplaces nada de lo que sigue.
-            var n = colores.length;
-            var w = 100 / n;
-            for (var x = 0; x < n; x++) {
-                document.getElementById("colores").innerHTML += '<rect width="' + w + '" height="25" x="' + x * w + '" y="0" fill="' + colores[x] + '" stroke="' + colores[x] + '"/>';
-            }
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    </body>
+    <footer class="container-fluid bg-dark text-white-50">
+      <div class="row py-3">
+        <div class="col-12">
+          <p class="d-flex justify-content-between small p-1 m-0">
+            <a href="https://github.com/profesorfaco/dno075-2021-2/" class="link-light">Infografía Digital</a>
+            <a
+              href="https://github.com/profesorfaco/dno075-2021-2/tree/main/clase-15"
+              class="d-none d-lg-inline link-light"
+              >Lunes 22 de noviembre, 2021</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
